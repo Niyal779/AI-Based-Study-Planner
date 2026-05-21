@@ -1,0 +1,105 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard - AI-Based Study Planner</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar glass">
+      <a class="brand" href="dashboard.html">AI Study</a>
+      <nav>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="planner.html">Planner</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+    </aside>
+    <main class="main">
+      <header class="main-header">
+        <div>
+          <p class="eyebrow">Study command center</p>
+          <h2>Welcome</h2>
+        </div>
+        <div class="header-actions">
+          <button id="toggleTheme" class="btn">Toggle Theme</button>
+        </div>
+      </header>
+
+      <section class="stats-strip">
+        <div class="stat-card">
+          <span>Next focus</span>
+          <strong>25 min</strong>
+        </div>
+        <div class="stat-card">
+          <span>Nearest exam</span>
+          <strong id="examCountdown">--</strong>
+        </div>
+        <div class="stat-card">
+          <span>Progress</span>
+          <strong id="progressScore">0%</strong>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="card accent-card">
+          <h3>Upcoming Exams</h3>
+          <ul id="upcomingExams"></ul>
+        </div>
+
+        <div class="card accent-card green">
+          <h3>Today's Tasks</h3>
+          <form id="taskForm" class="inline-form">
+            <input id="taskTitle" placeholder="Add a daily task" required>
+            <button class="btn primary" type="submit">Add</button>
+          </form>
+          <ul id="todayTasks"></ul>
+        </div>
+
+        <div class="card">
+          <h3>Pomodoro</h3>
+          <div id="pomodoro">
+            <div id="pomTime">25:00</div>
+            <div class="pom-controls">
+              <button id="pomStart" class="btn">Start</button>
+              <button id="pomStop" class="btn ghost">Stop</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card quote-card">
+          <h3>Motivation</h3>
+          <blockquote id="quote">"Study hard, dream big."</blockquote>
+        </div>
+
+        <div class="card">
+          <h3>Achievements</h3>
+          <div class="badges">
+            <span>Focus Starter</span>
+            <span>Plan Builder</span>
+            <span>Exam Ready</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 AI-Based Study Planner. All Rights Reserved.</p>
+    <p>
+        Design & Developed by 
+        <a href="https://niyal.netlify.app/" target="_blank">
+            Niyal Rahaman
+        </a>
+    </p>
+  </footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
+
+
