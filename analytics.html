@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Analytics - AI-Based Study Planner</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar glass">
+      <a class="brand" href="dashboard.html">AI Study</a>
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="planner.html">Planner</a>
+        <a href="analytics.html" class="active">Analytics</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+    </aside>
+    <main class="main">
+      <header class="main-header">
+        <div>
+          <p class="eyebrow">Study insights</p>
+          <h2>Analytics</h2>
+        </div>
+      </header>
+      <section class="stats-strip">
+        <div class="stat-card"><span>Best day</span><strong>Wed</strong></div>
+        <div class="stat-card"><span>Total week</span><strong>16.5 hrs</strong></div>
+        <div class="stat-card"><span>Consistency</span><strong>7 days</strong></div>
+      </section>
+      <section class="card chart-card">
+        <h3>Weekly Study Hours</h3>
+        <canvas id="weeklyChart" height="120"></canvas>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 AI-Based Study Planner. All Rights Reserved.</p>
+    <p>
+        Design & Developed by 
+        <a href="https://niyal.netlify.app/" target="_blank">
+            Niyal Rahaman
+        </a>
+    </p>
+  </footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script>
+    // sample chart data will be loaded from dashboard.js
+  </script>
+</body>
+</html>
+
+
