@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "name": "Demo Student",
+      "email": "demo@study.app",
+      "password": "password"
+    }
+  ],
+  "subjects": [],
+  "plan": {},
+  "plans": {},
+  "tasks": [],
+  "settings": {
+    "dailyHours": 3,
+    "gpaTarget": 3.8,
+    "reminders": true,
+    "theme": "light"
+  },
+  "progress": {
+    "completedTasks": 0,
+    "totalFocusMinutes": 0
+  }
+}
